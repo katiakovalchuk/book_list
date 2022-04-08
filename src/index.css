@@ -1,13 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 20px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.add-book, .board {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.add-book-input, .board-info {
+    width: calc(100% - 220px);
+    padding: 12px 10px;
+}
+
+.board {
+    margin: 30px 0;
+}
+
+.board-info > span {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 14px 32px;
+    cursor: pointer;
+    width: 155px;
+}
+
+.bg-thistle {
+    background: thistle;
+}
+
+.bg-red {
+    background: red;
+}
+
+.bg-green {
+    background: #709470;
+}
+
+.bg-blue {
+    background: #2F72D0BF;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 20px;
+    font-style: italic;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.description-text {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.font-decoration {
+    color: #389438;
+    text-decoration: line-through;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.list-item-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    max-width: 125px;
+}
+
+.list-item-checkbox {
+    margin: 0 1rem;
+}
+
+.list-item-title {
+    font-style: italic;
+}
+
+.list-item-wrapper {
+    list-style-type: none;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: #389438;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 900px;
+    min-width: 500px;
+    margin: 0 auto;
 }
